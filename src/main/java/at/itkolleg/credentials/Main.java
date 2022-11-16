@@ -14,7 +14,8 @@ public class Main {
         exportCredentials.export(credentialsList);
         System.out.println();
 
-        //Es wird ein neues CSV-Exporter erstellt und mit exportHash dekoriert
+        //Es wird ein neuer CSV-Exporter erstellt und mit exportHash
+        //werden die Passwärter dekoriert
         ExportCredentials exportHash = new DecoratorHash(new CsvExporter());
         exportHash.export(credentialsList);
     }
