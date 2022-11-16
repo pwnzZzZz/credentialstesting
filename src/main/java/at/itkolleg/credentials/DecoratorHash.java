@@ -7,8 +7,8 @@ import java.util.List;
 
 
 /**
- * Hier werden die konkreten Zusatzfunktionen für
- * den Decorator eingebaut
+ * Hier wird ein konkreter Decorator zum
+ * hashen von Passwörtern erstellt
  */
 public class DecoratorHash extends Decorator{
 
