@@ -30,9 +30,13 @@ public class DecoratorHash extends Decorator{
      */
     @Override
     public void export(List<Credentials> credentialsList) {
-        String sha256hex = Hashing.sha256()
-                .hashString(credentialsList, StandardCharsets.UTF_8)
-                .toString();
+        String tempPWD = "";
+
+        for(Credentials c : credentialsList){
+            c.setPwd(Hashing.sha256()
+                    .hashString(c.getPwd(), StandardCharsets.UTF_8)
+                    .toString());
+        }
 
         super.export(credentialsList);
     }
