@@ -7,7 +7,7 @@ import java.util.List;
 
 
 /**
- * Hier wird ein konkreter Decorator zum
+ * DecoratorHash ist ein konkreter Decorator zum
  * hashen von Passwörtern erstellt
  */
 public class DecoratorHash extends Decorator{
@@ -16,7 +16,7 @@ public class DecoratorHash extends Decorator{
     /**
      * Übergibt der Mutterklasse Decorator den
      * benötigten CsvExporter
-     * @param csvExporter Exporter-Objekt das zu verschönern ist
+     * @param csvExporter das zu dekorierende Exporter-Objekt
      */
     public DecoratorHash(CsvExporter csvExporter) {
         super(csvExporter);

@@ -3,8 +3,8 @@ package at.itkolleg.credentials;
 import java.util.List;
 
 /**
- * Die Decoratorklasse hält eine Referenz zum
- * CSV-Exporter.
+ * Der Decorator "erweitert" eine Klasse um zusätzliche Funktionalitäten.
+ * Die Decoratorklasse hält eine Referenz zum CSV-Exporter.
  */
 public abstract class Decorator implements ExportCredentials {
     private CsvExporter csvExporter;
